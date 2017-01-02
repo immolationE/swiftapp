@@ -15,15 +15,15 @@ class ViewController: UIViewController {
     var tapCount = 0
     
     @IBAction func ButtonPressed(_ sender: Any) {
+    
+        print(TextOne.text!)
+        print(TextTwo.text!)
         
-        tapCount = tapCount + 1
-        print(tapCount)
-        
-        if tapCount >= 5 {
-            theLabel.text = "The Button has been pushed 5 or more times!"
-        }
     }
     
+    @IBOutlet weak var TextOne: UITextField!
+    
+    @IBOutlet weak var TextTwo: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()

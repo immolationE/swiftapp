@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -34,16 +34,40 @@
                                     <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lnM-GQ-fbN"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yz6-1X-BMZ">
+                                <rect key="frame" x="137.5" y="178" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="azm-Hp-wjU"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1X1-Fb-GCC">
+                                <rect key="frame" x="137.5" y="229" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="lnN-hp-17H"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Yz6-1X-BMZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DtC-Op-O8h"/>
+                            <constraint firstItem="1X1-Fb-GCC" firstAttribute="top" secondItem="Yz6-1X-BMZ" secondAttribute="bottom" constant="21" id="TWu-9N-3NU"/>
                             <constraint firstItem="bS3-pX-W7o" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="UWW-xk-35F"/>
                             <constraint firstItem="RSv-XX-vw9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WTt-3I-ikn"/>
                             <constraint firstItem="RSv-XX-vw9" firstAttribute="top" secondItem="bS3-pX-W7o" secondAttribute="bottom" constant="33" id="bWe-aT-yXp"/>
+                            <constraint firstItem="1X1-Fb-GCC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c6K-Vy-43b"/>
+                            <constraint firstItem="Yz6-1X-BMZ" firstAttribute="top" secondItem="RSv-XX-vw9" secondAttribute="bottom" constant="29" id="dw9-ZN-oRU"/>
                             <constraint firstItem="bS3-pX-W7o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gXU-sL-zUH"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="TextOne" destination="Yz6-1X-BMZ" id="rnU-Ic-Awa"/>
+                        <outlet property="TextTwo" destination="1X1-Fb-GCC" id="0pc-5i-tu3"/>
                         <outlet property="theLabel" destination="bS3-pX-W7o" id="gdg-Ni-dFO"/>
                     </connections>
                 </viewController>
