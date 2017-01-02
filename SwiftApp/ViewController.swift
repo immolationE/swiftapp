@@ -19,8 +19,8 @@ class ViewController: UIViewController {
         tapCount = tapCount + 1
         print(tapCount)
         
-        if tapCount >= 10 {
-            theLabel.text = "The Button has been pushed 10 or more times!"
+        if tapCount >= 5 {
+            theLabel.text = "The Button has been pushed 5 or more times!"
         }
     }
     
