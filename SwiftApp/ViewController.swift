@@ -16,9 +16,13 @@ class ViewController: UIViewController {
     
     @IBAction func ButtonPressed(_ sender: Any) {
     
-        print(TextOne.text!)
-        print(TextTwo.text!)
+//        print(TextOne.text!)
+//        print(TextTwo.text!)
         
+//        theLabel.text = String(Double(TextOne.text!)!+Double(TextTwo.text!)!)
+        
+        theLabel.text = "Answer: \(Double(TextOne.text!)!+Double(TextTwo.text!)!)"
+
     }
     
     @IBOutlet weak var TextOne: UITextField!
